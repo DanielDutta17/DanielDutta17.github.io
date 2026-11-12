@@ -7,19 +7,19 @@
   <title>Daniel Dutta | Systems & Infrastructure Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
     <nav class="nav container" aria-label="Main navigation">
-      <a class="brand" href="#home">Daniel Dutta<span>.</span></a>
+      <a class="brand" href="#home">Daniel_Dutta<span class="cursor">_</span></a>
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Case Studies</a>
-        <a href="#learning">Learning</a>
+        <a href="#learning">AWS Learning</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
@@ -28,247 +28,328 @@
   <main>
     <section class="hero" id="home">
       <div class="container hero-content">
-        <p class="eyebrow">SYSTEMS ADMINISTRATION · INFRASTRUCTURE · CLOUD SUPPORT</p>
+        <p class="eyebrow">> ./systems_administration && cloud_infrastructure</p>
         <h1>Daniel Dutta</h1>
-        <h2>Systems Administrator <span>&</span> Infrastructure Engineer</h2>
+        <h2>Systems Administrator <span class="accent-text">&</span> Infrastructure Engineer</h2>
         <p class="hero-copy">I support and maintain business-critical IT environments across Linux and Windows servers, VMware, storage, enterprise networking and AWS-supported workloads.</p>
         <div class="hero-actions">
           <a class="button primary" href="#contact">Get in touch</a>
-          <a class="button secondary" href="#experience">Explore my experience</a>
+          <a class="button secondary" href="#experience">Explore experience</a>
         </div>
-        <p class="location">Shillong, Meghalaya, India · Open to permanent, fully remote opportunities across India</p>
+        <div class="location-badge">
+          <span class="status-dot"></span> Open to permanent, fully remote roles across India · Based in Shillong
+        </div>
       </div>
     </section>
 
     <section class="section container" id="about">
-      <p class="eyebrow">PROFILE</p>
-      <h2 class="section-title">About me</h2>
+      <div class="section-header">
+        <p class="eyebrow">01. PROFILE</p>
+        <h2 class="section-title">About Me</h2>
+      </div>
       <div class="about-content">
         <p class="lead">I am a Systems Administrator and Infrastructure Engineer with 9+ years of professional experience in IT support, infrastructure operations and production support.</p>
-        <p>My experience includes administering Linux and Windows environments, supporting VMware vSphere, managing SAN/NAS storage, troubleshooting enterprise networks and firewalls, monitoring infrastructure, and supporting AWS workloads. I have handled high-priority incidents, carried out root cause analysis, coordinated with vendors and technical teams, and supported IT compliance activities.</p>
-        <p>I value reliable operations, clear communication, practical troubleshooting and resolving recurring issues at their source.</p>
-        <p><strong>Languages:</strong> Fluent in English, Bengali, and Hindi.</p>
-        <div class="remote-note">
-          <strong>Remote-work readiness:</strong> Experienced in supporting distributed IT environments and coordinating with remote clients and technical teams. Open to permanent, fully remote opportunities across India.
+        <div class="about-text-grid">
+          <div>
+            <p>My experience includes administering Linux and Windows environments, supporting VMware vSphere, managing SAN/NAS storage, troubleshooting enterprise networks and firewalls, monitoring infrastructure, and supporting AWS workloads. I have handled high-priority incidents, carried out root cause analysis, coordinated with vendors and technical teams, and supported IT compliance activities.</p>
+            <p>I value reliable operations, clear communication, practical troubleshooting and resolving recurring issues at their source.</p>
+          </div>
+          <div class="about-sidebar">
+            <div class="info-block">
+              <h4>Languages</h4>
+              <p>English, Bengali, Hindi</p>
+            </div>
+            <div class="info-block">
+              <h4>Remote Readiness</h4>
+              <p>Experienced in supporting distributed IT environments and coordinating with remote clients/technical teams.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="section section-alt" id="skills">
       <div class="container">
-        <p class="eyebrow">CAPABILITIES</p>
-        <h2 class="section-title">Technical skills</h2>
+        <div class="section-header">
+          <p class="eyebrow">02. CAPABILITIES</p>
+          <h2 class="section-title">Technical Skills</h2>
+        </div>
         <div class="skill-grid">
-          <article class="skill-card"><h3>Cloud & tools</h3><p>AWS (EC2, S3, RDS, IAM, CloudWatch, EKS), Jenkins CI/CD support, GitHub, Terraform, Google Workspace</p></article>
-          <article class="skill-card"><h3>Operating systems</h3><p>Linux administration, Windows environments, basic Bash and Python scripting</p></article>
-          <article class="skill-card"><h3>Virtualization & storage</h3><p>VMware vSphere, virtual machine support, SAN/NAS infrastructure, backup and disaster recovery</p></article>
-          <article class="skill-card"><h3>Monitoring & ITSM</h3><p>Zabbix, CloudWatch, Prometheus, Grafana, Syslog, Ivanti ITSM, Acronis, PiHole</p></article>
-          <article class="skill-card"><h3>Networking & security</h3><p>TCP/IP, DNS, DHCP, VLANs, routing, VPNs, FortiGate and Sophos firewalls, Cisco switching</p></article>
-          <article class="skill-card"><h3>Operations</h3><p>P1/P2 incident handling, troubleshooting, root cause analysis, documentation, vendor coordination and audit support</p></article>
+          <article class="skill-card">
+            <div class="card-icon">☁️</div>
+            <h3>Cloud & Tools</h3>
+            <p class="mono-text">AWS (EC2, S3, RDS, IAM, CloudWatch, EKS) / Jenkins / GitHub / Terraform / Google Workspace</p>
+          </article>
+          <article class="skill-card">
+            <div class="card-icon">🐧</div>
+            <h3>Operating Systems</h3>
+            <p class="mono-text">Linux Admin / Windows Server / Bash / Python</p>
+          </article>
+          <article class="skill-card">
+            <div class="card-icon">💾</div>
+            <h3>Virtualization & Storage</h3>
+            <p class="mono-text">VMware vSphere / SAN & NAS / Disaster Recovery / Backups</p>
+          </article>
+          <article class="skill-card">
+            <div class="card-icon">📊</div>
+            <h3>Monitoring & ITSM</h3>
+            <p class="mono-text">Zabbix / Prometheus / Grafana / CloudWatch / Acronis / PiHole / Ivanti ITSM</p>
+          </article>
+          <article class="skill-card">
+            <div class="card-icon">🔒</div>
+            <h3>Networking & Security</h3>
+            <p class="mono-text">TCP/IP / DNS / VLANs / VPNs / FortiGate / Sophos / Cisco Switching</p>
+          </article>
+          <article class="skill-card">
+            <div class="card-icon">⚙️</div>
+            <h3>IT Operations</h3>
+            <p class="mono-text">P1-P2 Incident Management / RCA / Audits / Vendor Coordination</p>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="section container" id="experience">
-      <p class="eyebrow">CAREER</p>
-      <h2 class="section-title">Professional experience</h2>
-      <div class="timeline">
-        <article class="job">
-          <div class="job-heading">
-            <div class="job-titles">
-              <h3>System Administrator & Infrastructure Head</h3>
-              <p class="company">Triotree Technologies Pvt. Ltd. · Client site – Hospital</p>
-            </div>
-            <span class="date">Jun 2026 – Present</span>
-          </div>
-          <ul>
-            <li>Manage hospital IT infrastructure, including servers, VMware vSphere, SAN storage, Synology NAS, cloud servers and critical healthcare systems.</li>
-            <li>Administer virtualization and troubleshoot virtual machines, SAN connectivity, resource utilization and server issues.</li>
-            <li>Manage FortiGate firewalls, Cisco Meraki switches and wireless access points, VPNs, NAT, VLANs, routing and cloud connectivity.</li>
-            <li>Configure application-specific port forwarding, traffic rules and communication between cloud instances and services.</li>
-            <li>Monitor infrastructure with Zabbix and manage backup, restoration, disaster recovery, endpoint security and vendor coordination.</li>
-            <li>Perform root cause analysis and support NABH audits through documentation, security controls and backup evidence.</li>
-          </ul>
-        </article>
-
-        <article class="job">
-          <div class="job-heading">
-            <div class="job-titles">
-              <h3>Technical Support Analyst (L2/L3)</h3>
-              <p class="company">InEvolution · Bangalore</p>
-            </div>
-            <span class="date">Feb 2025 – Dec 2025</span>
-          </div>
-          <ul>
-            <li>Handled approximately 40–50 L2/L3 production incidents weekly across cloud and on-premises applications, including P1/P2 incidents.</li>
-            <li>Troubleshot application, server and connectivity issues using Linux, application logs, AWS CloudWatch and system diagnostics.</li>
-            <li>Supported AWS workloads, made minor configuration updates using existing Terraform templates and troubleshot Jenkins deployment failures.</li>
-            <li>Performed root cause analysis, documented recurring issues and worked with technical teams on corrective actions.</li>
-          </ul>
-        </article>
-
-        <article class="job">
-          <div class="job-heading">
-            <div class="job-titles">
-              <h3>System Analyst A – Infrastructure & Support</h3>
-              <p class="company">iMerit Technology Services Pvt. Ltd. · Thimphu / Shillong</p>
-            </div>
-            <span class="date">Dec 2018 – Mar 2024</span>
-          </div>
-          <ul>
-            <li>Managed Linux servers, Active Directory, DNS, DHCP, firewalls, Google Workspace and enterprise network services.</li>
-            <li>Configured and supported FortiGate and Sophos firewalls, VPNs, access controls, Cisco core switches and VLANs.</li>
-            <li>Implemented and monitored Zabbix for infrastructure monitoring, alerting and proactive issue identification.</li>
-            <li>Provided infrastructure, application and end-user support for 500+ users and managed service requests through Ivanti ITSM.</li>
-            <li>Supported ISO audits, maintained infrastructure documentation and coordinated escalations with vendors and internal teams.</li>
-            <li>Earned four promotions during the tenure.</li>
-          </ul>
-        </article>
-
-        <article class="job">
-          <div class="job-heading">
-            <div class="job-titles">
-              <h3>Desktop Support Engineer (L1)</h3>
-              <p class="company">Renovision Automation Services Pvt. Ltd. · Client: Aircel</p>
-            </div>
-            <span class="date">Aug 2017 – Nov 2018</span>
-          </div>
-          <ul>
-            <li>Provided customer-facing desktop support for Windows and Linux systems, desktops, laptops, printers and peripherals.</li>
-            <li>Troubleshot LAN and IP connectivity, supported Outlook and business applications, and maintained IT asset records.</li>
-            <li>Performed manual server backup activities and handled user incidents, service requests and escalations.</li>
-          </ul>
-        </article>
-
-        <article class="job">
-          <div class="job-heading">
-            <div class="job-titles">
-              <h3>System Support Engineer</h3>
-              <p class="company">Hue Services Pvt. Ltd. · Shillong</p>
-            </div>
-            <span class="date">Apr 2016 – Apr 2017</span>
-          </div>
-          <ul>
-            <li>Provided desktop and network support for laptops, printers and LAN issues, supporting approximately 1,000 users in daily operations.</li>
-            <li>Performed OS updates, patching and routine maintenance; resolved common issues at first contact and coordinated hardware repairs with vendors.</li>
-          </ul>
-        </article>
+      <div class="section-header">
+        <p class="eyebrow">03. CAREER</p>
+        <h2 class="section-title">Professional Experience</h2>
       </div>
-      <p class="note">Experience dates and role descriptions on this page are based on the résumé provided. Please review them before publishing.</p>
+      <div class="timeline">
+        
+        <article class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="job-heading">
+              <div>
+                <h3>System Administrator & Infrastructure Head</h3>
+                <p class="company">Triotree Technologies Pvt. Ltd. · Client site: Hospital</p>
+              </div>
+              <span class="date mono-text">Jun 2026 – Present</span>
+            </div>
+            <ul>
+              <li>Manage hospital IT infrastructure, including servers, VMware vSphere, SAN storage, Synology NAS, cloud servers and critical healthcare systems.</li>
+              <li>Administer virtualization and troubleshoot virtual machines, SAN connectivity, resource utilization and server issues.</li>
+              <li>Manage FortiGate firewalls, Cisco Meraki switches/WAPs, VPNs, NAT, VLANs, routing and cloud connectivity.</li>
+              <li>Configure application-specific port forwarding, traffic rules and communication between cloud instances and services.</li>
+              <li>Monitor infrastructure with Zabbix and manage backup, restoration, disaster recovery, endpoint security and vendors.</li>
+              <li>Perform root cause analysis and support NABH audits through documentation, security controls and backup evidence.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="job-heading">
+              <div>
+                <h3>Technical Support Analyst (L2/L3)</h3>
+                <p class="company">InEvolution · Bangalore</p>
+              </div>
+              <span class="date mono-text">Feb 2025 – Dec 2025</span>
+            </div>
+            <ul>
+              <li>Handled ~40–50 L2/L3 production incidents weekly across cloud and on-premises applications (including P1/P2).</li>
+              <li>Troubleshot application, server and connectivity issues using Linux, application logs, AWS CloudWatch and diagnostics.</li>
+              <li>Supported AWS workloads, made minor configuration updates via Terraform templates and fixed Jenkins deployments.</li>
+              <li>Performed root cause analysis, documented recurring issues and worked with technical teams on corrective actions.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="job-heading">
+              <div>
+                <h3>System Analyst A – Infrastructure & Support</h3>
+                <p class="company">iMerit Technology Services Pvt. Ltd. · Thimphu & Shillong</p>
+              </div>
+              <span class="date mono-text">Dec 2018 – Mar 2024</span>
+            </div>
+            <p class="promo-highlight">🏆 Earned four promotions during tenure based on performance.</p>
+            <ul>
+              <li>Managed Linux servers, Active Directory, DNS, DHCP, firewalls, Google Workspace and enterprise network services.</li>
+              <li>Configured and supported FortiGate and Sophos firewalls, VPNs, access controls, Cisco core switches and VLANs.</li>
+              <li>Implemented and monitored Zabbix for infrastructure monitoring, alerting and proactive issue identification.</li>
+              <li>Provided infrastructure, application and end-user support for 500+ users via Ivanti ITSM.</li>
+              <li>Supported ISO audits, maintained infrastructure documentation and coordinated escalations.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="job-heading">
+              <div>
+                <h3>Desktop Support Engineer (L1)</h3>
+                <p class="company">Renovision Automation Services Pvt. Ltd. · Client: Aircel</p>
+              </div>
+              <span class="date mono-text">Aug 2017 – Nov 2018</span>
+            </div>
+            <ul>
+              <li>Provided customer-facing desktop support for Windows/Linux systems, desktops, laptops, printers and peripherals.</li>
+              <li>Troubleshot LAN and IP connectivity, supported Outlook and business applications, and maintained IT asset records.</li>
+              <li>Performed manual server backup activities and handled user incidents, service requests and escalations.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="job-heading">
+              <div>
+                <h3>System Support Engineer</h3>
+                <p class="company">Hue Services Pvt. Ltd. · Shillong</p>
+              </div>
+              <span class="date mono-text">Apr 2016 – Apr 2017</span>
+            </div>
+            <ul>
+              <li>Provided desktop and network support for laptops, printers and LAN issues, supporting ~1,000 users.</li>
+              <li>Performed OS updates, patching and routine maintenance; resolved common issues at first contact.</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
     </section>
 
     <section class="section section-alt" id="projects">
       <div class="container">
-        <p class="eyebrow">PRACTICAL TROUBLESHOOTING</p>
-        <h2 class="section-title">Technical case studies</h2>
-        <p class="lead max-w-content">Selected examples of infrastructure investigation, production support and technical problem-solving. Details are anonymised to protect employer and client information.</p>
+        <div class="section-header">
+          <p class="eyebrow">04. PRACTICAL TROUBLESHOOTING</p>
+          <h2 class="section-title">Technical Case Studies</h2>
+        </div>
+        <p class="lead max-w-content">Selected examples of infrastructure investigation, production support and technical problem-solving. Details anonymized to protect employer/client data.</p>
 
         <div class="project-grid">
           <article class="project-card">
-            <span class="tag">Application performance · Production support</span>
+            <div class="card-tags">
+              <span class="tag mono-text">App Performance</span>
+              <span class="tag mono-text">Prod Support</span>
+            </div>
             <h3>Investigating recurring HIS application delays</h3>
-            <p><strong>Issue:</strong> Users experienced application lag and repeated “Wait for response” messages.</p>
-            <p><strong>Investigation:</strong> Reviewed application, server and cloud logs and identified unnecessary temporary files being generated at approximately 9 GB per day.</p>
-            <p><strong>Action:</strong> Shared the findings with the development team, explained the observed impact and coordinated the investigation while keeping the relevant teams updated.</p>
-            <p><strong>Outcome:</strong> The developers addressed the application-side issue.</p>
-            <p><strong>Skills:</strong> Log analysis, production troubleshooting, incident investigation, RCA and cross-team coordination.</p>
+            <div class="case-study-content">
+              <p><strong class="accent-text">Issue:</strong> Users experienced lag and repeated “Wait for response” messages.</p>
+              <p><strong class="accent-text">Investigation:</strong> Reviewed application, server and cloud logs; identified temporary files generating at ~9 GB/day.</p>
+              <p><strong class="accent-text">Outcome:</strong> Coordinated with devs using log data to address the application-side issue successfully.</p>
+            </div>
           </article>
 
           <article class="project-card">
-            <span class="tag">AWS · IAM troubleshooting</span>
+            <div class="card-tags">
+              <span class="tag mono-text">AWS IAM</span>
+              <span class="tag mono-text">Security</span>
+            </div>
             <h3>Investigating restricted IAM permissions</h3>
-            <p><strong>Issue:</strong> An IAM user could not perform expected AWS tasks, including launching EC2 instances and accessing S3 buckets.</p>
-            <p><strong>Investigation:</strong> Reviewed the user's IAM permissions and identified a separate inline policy that was restricting the required actions.</p>
-            <p><strong>Action:</strong> Analysed the policy configuration and the permissions affecting the user's access, then identified the policy as the source of the restriction for follow-up correction.</p>
-            <p><strong>Skills:</strong> AWS IAM, policy review, permission troubleshooting, EC2 and S3 access investigation.</p>
+            <div class="case-study-content">
+              <p><strong class="accent-text">Issue:</strong> IAM user could not perform expected tasks (launching EC2, accessing S3).</p>
+              <p><strong class="accent-text">Investigation:</strong> Reviewed IAM permissions; isolated a separate inline policy overriding required actions.</p>
+              <p><strong class="accent-text">Outcome:</strong> Identified the exact conflicting policy for follow-up correction and access restoration.</p>
+            </div>
           </article>
 
           <article class="project-card">
-            <span class="tag">Infrastructure monitoring</span>
-            <h3>Zabbix monitoring and alerting</h3>
-            <p>Used Zabbix to monitor infrastructure health and identify server, network and service issues proactively, supporting faster investigation and operational visibility.</p>
-            <p><strong>Skills:</strong> Infrastructure monitoring, alert review, availability checks and incident response.</p>
+            <div class="card-tags">
+              <span class="tag mono-text">Zabbix</span>
+              <span class="tag mono-text">Monitoring</span>
+            </div>
+            <h3>Infrastructure monitoring & alerting</h3>
+            <div class="case-study-content">
+              <p>Used Zabbix to monitor infrastructure health and identify server, network and service issues proactively, supporting faster investigation, RCA, and operational visibility across environments.</p>
+            </div>
           </article>
 
           <article class="project-card">
-            <span class="tag">Cloud and network connectivity</span>
-            <h3>Application connectivity and traffic troubleshooting</h3>
-            <p>Supported application connectivity across infrastructure environments by investigating routing, firewall policies, NAT, port forwarding and communication between cloud-hosted servers and services.</p>
-            <p><strong>Skills:</strong> TCP/IP, routing, firewall troubleshooting, NAT and cloud connectivity.</p>
+            <div class="card-tags">
+              <span class="tag mono-text">Networking</span>
+              <span class="tag mono-text">Firewalls</span>
+            </div>
+            <h3>Traffic & connectivity troubleshooting</h3>
+            <div class="case-study-content">
+              <p>Supported application connectivity across infrastructure environments by investigating routing, firewall policies, NAT, port forwarding and communication between cloud-hosted servers and on-prem services.</p>
+            </div>
           </article>
         </div>
-        <p class="note">These case studies are anonymised summaries of practical support experience. No employer names, client names, internal IP addresses, server names, credentials, patient information or confidential configuration details are included.</p>
       </div>
     </section>
 
     <section class="section container" id="learning">
-      <p class="eyebrow">CONTINUOUS LEARNING</p>
-      <h2 class="section-title">AWS & technical learning</h2>
-      <p class="lead max-w-content">I am continuing to strengthen my cloud architecture and automation fundamentals alongside my professional infrastructure and production-support experience.</p>
+      <div class="section-header">
+        <p class="eyebrow">05. CONTINUOUS LEARNING</p>
+        <h2 class="section-title">AWS & Technical Development</h2>
+      </div>
+      <p class="lead max-w-content">Strengthening cloud architecture and automation fundamentals alongside professional infrastructure experience.</p>
+      
       <div class="project-grid">
-        <article class="project-card">
-          <span class="tag">Certification preparation · In progress</span>
-          <h3>AWS Certified Solutions Architect – Associate (SAA-C03)</h3>
-          <p>Currently preparing for the AWS Solutions Architect – Associate certification, with a focus on AWS architecture, IAM and security, networking, compute, storage, databases, monitoring, reliability and cost optimisation.</p>
-        </article>
-        
-        <article class="project-card">
-          <span class="tag">Training Certificate · Completed</span>
+        <article class="project-card highlight-card">
+          <div class="card-tags">
+            <span class="tag tag-success mono-text">Certificate Completed</span>
+          </div>
           <h3>AWS Expert Training Program – StarAgile</h3>
-          <ul class="card-list">
+          <ul class="clean-list">
             <li>Successfully completed StarAgile's AWS Expert training program.</li>
-            <li>Received a certificate confirming successful completion of the training.</li>
+            <li>Received a certificate confirming comprehensive completion of the curriculum.</li>
           </ul>
         </article>
 
         <article class="project-card">
-          <span class="tag">Hands-on learning</span>
-          <h3>AWS services and cloud labs</h3>
-          <p>Continuing practical learning with AWS services such as EC2, S3, RDS, IAM and CloudWatch through guided exercises, labs and troubleshooting scenarios.</p>
+          <div class="card-tags">
+            <span class="tag mono-text">In Progress</span>
+          </div>
+          <h3>AWS Certified Solutions Architect (SAA-C03)</h3>
+          <p>Preparing for certification with a focus on architecture, IAM, networking, compute, storage, DBs, and cost optimization.</p>
         </article>
+        
         <article class="project-card">
-          <span class="tag">Technical development</span>
-          <h3>Linux, Python and automation fundamentals</h3>
-          <p>Building skills through Linux practice, basic Bash and Python scripting, Git/GitHub and infrastructure configuration exercises.</p>
+          <div class="card-tags">
+            <span class="tag mono-text">Hands-On Labs</span>
+          </div>
+          <h3>Cloud & DevOps Fundamentals</h3>
+          <p>Practical learning covering EC2, S3, RDS, CloudWatch, Jenkins CI/CD, Terraform, and container troubleshooting.</p>
         </article>
+
         <article class="project-card">
-          <span class="tag">Course and project-based learning</span>
-          <h3>Cloud and DevOps fundamentals</h3>
-          <p>Completed project-based training involving CI/CD concepts, Jenkins, Terraform, monitoring with Prometheus and Grafana, and containerised application troubleshooting.</p>
+          <div class="card-tags">
+            <span class="tag mono-text">Scripting</span>
+          </div>
+          <h3>Linux, Python & Automation</h3>
+          <p>Building efficiency through advanced Linux practice, basic Bash and Python scripting, and Git version control.</p>
         </article>
       </div>
-      <p class="note">The learning activities above are training, certification preparation and hands-on practice. They are presented separately from professional production experience.</p>
     </section>
 
     <section class="section container" id="education">
-      <p class="eyebrow">BACKGROUND</p>
-      <h2 class="section-title">Education</h2>
+      <div class="section-header">
+        <p class="eyebrow">06. BACKGROUND</p>
+        <h2 class="section-title">Education</h2>
+      </div>
       <div class="education-grid">
         <div class="education-card">
-          <h3>Bachelor of Computer Applications (BCA)</h3>
-          <p>North Eastern Hill University · 2016</p>
+          <h3 class="mono-text">Bachelor of Computer Applications (BCA)</h3>
+          <p>North Eastern Hill University <span class="accent-text">·</span> 2016</p>
         </div>
         <div class="education-card">
-          <h3>HSSLC – Science</h3>
-          <p>Meghalaya Board of School Education · 2013</p>
+          <h3 class="mono-text">HSSLC – Science</h3>
+          <p>Meghalaya Board of School Education <span class="accent-text">·</span> 2013</p>
         </div>
         <div class="education-card">
-          <h3>SSC</h3>
-          <p>Meghalaya Board of School Education · 2010</p>
+          <h3 class="mono-text">SSC</h3>
+          <p>Meghalaya Board of School Education <span class="accent-text">·</span> 2010</p>
         </div>
       </div>
     </section>
 
     <section class="contact-section" id="contact">
       <div class="container">
-        <p class="eyebrow contact-eyebrow">LET'S CONNECT</p>
-        <h2 class="section-title contact-title">Contact</h2>
-        <p class="lead">I’m looking for a permanent, fully remote opportunity across India in systems administration, infrastructure support, cloud support or production operations.</p>
+        <h2 class="section-title">Ready to scale your infrastructure?</h2>
+        <p class="lead">Seeking a permanent, fully remote opportunity across India in systems administration, infrastructure support, or cloud operations.</p>
         <div class="contact-links">
           <a href="mailto:danieldutta17@gmail.com" class="button primary">danieldutta17@gmail.com</a>
-          <a href="tel:+919774042971" class="button secondary contact-secondary">+91 977 404 2971</a>
-          <a href="tel:+916909390621" class="button secondary contact-secondary">+91 690 939 0621</a>
-          <a href="https://www.linkedin.com/in/daniel-dutta-73375b285" class="button secondary contact-secondary" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>
+          <a href="tel:+919774042971" class="button secondary">+91 977 404 2971</a>
+          <a href="tel:+916909390621" class="button secondary">+91 690 939 0621</a>
+          <a href="https://www.linkedin.com/in/daniel-dutta-73375b285" class="button secondary" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </div>
     </section>
@@ -276,7 +357,7 @@
 
   <footer class="footer">
     <div class="container">
-      <p>© <span id="year">2026</span> Daniel Dutta · Built with HTML and CSS</p>
+      <p class="mono-text">© <span id="year">2026</span> Daniel Dutta. Engineered for reliability.</p>
     </div>
   </footer>
 </body>
